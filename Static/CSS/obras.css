@@ -1,3 +1,8 @@
 .obras{
     background-color: rgb(84, 156, 219);
 }
+
+.scrollpsy-test{
+    height: scroll;
+    overflow-y: scroll;
+}

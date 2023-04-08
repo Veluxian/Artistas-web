@@ -3,6 +3,9 @@
 }
 
 .scrollpsy-test{
-    height: scroll;
-    overflow-y: scroll;
+    height: 600px;
+    overflow-y: auto;
+    border: 1px solid black;
+    width: 80%;
+    margin-left: 5%;
 }

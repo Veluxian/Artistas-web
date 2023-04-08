@@ -12,5 +12,6 @@
 
 .imagen-obras{
     min-height: 240px;
-    max-height: 242px;
+    max-height: 300px;
+    min-width: 240px;
 }

@@ -20,19 +20,19 @@
                     <br>
                     <div class="mb-3 position-relative">
                         <label for="validationTooltip01" class="form-label">Nombre: </label>
-                        <input type="text" class="form-control" id="validationTooltip01" placeholder="Ingresa tu nombre: " size="20" required="">
+                        <input type="text" class="form-control" id="validationTooltip01" pattern="[A-Za-z]{2,20}" size="20" required="">
                         <div class="invalid-tooltip">Por favor completa tu nombre</div>
                     </div>
                     <div class="mb-3 position-relative">
                         <label for="validationTooltip02" class="form-label">Apellido: </label>
-                        <input type="text" class="form-control" id="validationTooltip02" placeholder="Ingresa tu apellido: " size="20" required="">
+                        <input type="text" class="form-control" id="validationTooltip02" pattern="[A-Za-z]{2,20}" size="20" required="">
                         <div class="invalid-tooltip">Por favor completa tu apellido</div>
                     </div>
                     <div class="mb-3 position-relative">
                         <label for="validationTooltipUsername" class="form-label">Dirección de correo: </label>
                         <div class="input-group has-validation">
                             <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                            <input type="email" class="form-control" id="validationTooltipUsernamePrepend" aria-describedby="validationTooltipUsernamePrepend" pattern=".+@gmail\.com" size="30" required="">
+                            <input type="email" class="form-control" id="validationTooltipUsernamePrepend" aria-describedby="validationTooltipUsernamePrepend" minlength="8" maxlength="30" pattern=".+@gmail\.com" size="30" required="">
                             <div class="invalid-tooltip">Por favor escoge un email válido</div>
                         </div>
                     </div>

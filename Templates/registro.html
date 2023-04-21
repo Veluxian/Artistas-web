@@ -20,12 +20,12 @@
                     <br>
                     <div class="mb-3 position-relative">
                         <label for="validationTooltip01" class="form-label">Nombre: </label>
-                        <input type="text" class="form-control" id="validationTooltip01" placeholder="Ingresa tu nombre: " required="">
+                        <input type="text" class="form-control" id="validationTooltip01" placeholder="Ingresa tu nombre: " size="20" required="">
                         <div class="invalid-tooltip">Por favor completa tu nombre</div>
                     </div>
                     <div class="mb-3 position-relative">
                         <label for="validationTooltip02" class="form-label">Apellido: </label>
-                        <input type="text" class="form-control" id="validationTooltip02" placeholder="Ingresa tu apellido: " required="">
+                        <input type="text" class="form-control" id="validationTooltip02" placeholder="Ingresa tu apellido: " size="20" required="">
                         <div class="invalid-tooltip">Por favor completa tu apellido</div>
                     </div>
                     <div class="mb-3 position-relative">
@@ -39,7 +39,7 @@
                     <br>
                     <div class="form-floating">
                         <label for="floatingPassword"></label>
-                        <input type="password" class="form-control" id="floatingPassword" required="">
+                        <input type="password" class="form-control" id="floatingPassword" minlength="8" maxlength="20" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&.])[A-Za-z\d@$!%*?&.]{8,20}$" size="20" required=""> 
                         <div class="invalid-tooltip">Por favor escribe tu contraseña</div>
                         <br>
                     </div>

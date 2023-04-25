@@ -17,3 +17,17 @@
       }, false)
     })
   })()
+
+  $(document).ready(function(){
+    $(".prueba").focus(function(){
+      $("#prue").hide();
+    });
+
+    $(".prueba").blur(function(){
+      $("#prue").show();
+    });
+    
+    $("button").click(function(){
+      alert("Se estan enviando los datos. ");
+    });
+  });

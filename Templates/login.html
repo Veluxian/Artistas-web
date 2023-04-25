@@ -4,22 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Static/CSS/main.css">
-    <link rel="stylesheet" href="Static/CSS/obras.css">
+    <link rel="stylesheet" href="../Static/CSS/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <title>ComprArte</title>
 </head>
-
-<body class="container-fluid obras">
-
-    <header class="conteiner-fluid mt-5 bg-body-tertiary">
+<body class="container-fluid">
+    <header class="conteiner-fluid mt-5">
         <div class="row">
             <div class="col-7">
-                <!-- NNavbar que utilizaremos-->
                 <nav class="navbar navbar-expand-lg bg-body-tertiary">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="main.html">
-                            <img src="Static/Images/arte logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        <a class="navbar-brand" href="../main.html">
+                            <img src="../Static/Images/arte logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                             ComprArte
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +24,7 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="main.html">Inicio</a>
+                                    <a class="nav-link active" aria-current="page" href="../main.html">Inicio</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link disabled" href="#">Nuestros Artistas</a>
@@ -48,7 +44,7 @@
             <div class="col mt-2">
                 <div class="dropdown">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                        <img src="Static/Images/usuario.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        <img src="../Static/Images/usuario.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                         Ingresa
                     </button>
                     <form class="dropdown-menu p-4">
@@ -72,62 +68,19 @@
                     </form>
                   </div>
             </div>
-            <!--links a la vista de cliente o artista-->
             <div class="col mt-2">
                 <ul>
-                    <li><a href="main.html">Clientes</a></li>
-                    <li><a href="Templates/artistas.html">Artistas</a></li>
+                    <li><a href="../main.html">Clientes</a></li>
+                    <li><a href="artistas.html">Artistas</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <!--Carrucel de imagenes de los artistas-->
-    <div class="content-fluid mt-5 bg-secondary">
-        <div class="row justify-content-center">
-            <div class="col-8">
-                <div id="carouselExampleCaptions" class="carousel slide">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <a href="Templates/miguel_angel.html">
-                            <img src="Static/Images/miguel angel.jpg" class="d-block w-100" alt="Miguel Angel">
-                        </a>
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Miguel Angel</h5>
-                        </div>
-                      </div>
-                      <div class="carousel-item ">
-                        <img src="Static/Images/pablo picasso.jpg" class="d-block w-100" alt="Pablo Picasso">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Pablo Picasso</h5>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <a href="Templates/vincent_van_gogh.html">
-                            <img src="Static/Images/vincent van gogh.jpg" class="d-block w-100" alt="Vincent Van Gogh">
-                        </a>
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Vincent Van Gogh</h5>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-            </div>
+    <div class="container-fluid">
+        <div class="">
+
         </div>
     </div>
-
     <footer>
 
     </footer>

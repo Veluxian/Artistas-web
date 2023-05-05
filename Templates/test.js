@@ -19,11 +19,11 @@
   })()
 
   $(document).ready(function(){
-    $(".prueba").focus(function(){
+    $(".prueba").blur(function(){
       $("#prue").hide();
     });
 
-    $(".prueba").blur(function(){
+    $(".prueba").focus(function(){
       $("#prue").show();
     });
     

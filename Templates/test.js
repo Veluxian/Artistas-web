@@ -24,7 +24,14 @@
       $("#prue").show();
     });
     
-    $("button").click(function(){
-      alert("Se estan enviando los datos. ");
+    $("#boton").click(function(){
+      $.get("https://randomuser.me/api/",
+      function(data){
+        $.each(data.results, function(i,item){
+            $("#boton").append("<tr><td>"+item.gender+"</td><td>"+item.name+
+                "</td><td><img src='"+item.strCategoryThumb+"'>"+
+                "</td><td>"+item.title+"</td><td>"+item.first+"</td><td>"+item.last+"</td></tr>"); 
+        });
+      });
     });
   });

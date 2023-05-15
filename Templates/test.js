@@ -23,7 +23,7 @@
     $(".prueba").focus(function(){
       $("#prue").show();
     });
-    
+  
     $("#boton").click(function(){
       $.get("https://randomuser.me/api/",
       function(data){

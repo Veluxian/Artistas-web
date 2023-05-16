@@ -17,21 +17,30 @@
 
   $(document).ready(function(){
     $(".prueba").blur(function(){
-      $("#prue").hide();
+      $(".prue").hide();
     });
 
     $(".prueba").focus(function(){
-      $("#prue").show();
-    });
-  
-    $("#boton").click(function(){
-      $.get("https://randomuser.me/api/",
-      function(data){
-        $.each(data.results, function(i,item){
-            $("#boton").append("<tr><td>"+item.gender+"</td><td>"+item.name+
-                "</td><td><img src='"+item.strCategoryThumb+"'>"+
-                "</td><td>"+item.title+"</td><td>"+item.first+"</td><td>"+item.last+"</td></tr>"); 
-        });
-      });
+      $(".prue").show();
     });
   });
+/*
+  function convertir(x, y, z){
+    var myHeaders = new Headers();
+    myHeaders.append("apikey", "aLrg0fHteOAuBGetI72VtEgn7QEfBbgW");
+
+    var requestOptions = {
+      method: 'GET',
+      redirect: 'follow',
+      headers: myHeaders
+    };
+
+  fetch("https://api.apilayer.com/fixer/convert?to={z}&from={y}&amount={x}", requestOptions)
+   .then(response => response.text())
+   .then(result => console.log(result))
+   .catch(error => console.log('error', error));
+
+   return <p>La cantidad {"amount"} desde {"from"} hacia {"to"} es de {"result"}</p>
+};
+
+*/

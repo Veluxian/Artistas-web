@@ -15,3 +15,11 @@
     max-height: 300px;
     min-width: 240px;
 }
+
+.conversor{
+    background-color: gray;
+}
+
+.convertidor{
+    color: yellow;
+}

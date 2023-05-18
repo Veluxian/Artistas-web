@@ -318,12 +318,14 @@
         <div class="conteiner-fluid mt-3 conversor">
             <div class="row justify-content-center">
                 <div class="col-6 mt-5 mb-5">
-                    <h3 class="convertidor">Cambio de divisa aqui</h3>
-                    <input type="text" id="ca">
-                    <input type="text" id="de">
-                    <input type="text" id="ha">
-                    <button id="boton" class="btn btn-primary"> Convertir</button>
-                    <p id="resultado" class="convertidor"></p>
+                    <form>
+                        <h3 class="convertidor">Cambio de divisa aqui</h3>
+                        <input type="text" id="ca" placeholder="Monto a ingresar" required = "">
+                        <input type="text" id="de" placeholder="Divisa a preguntar " pattern="[A-Z]{3}" required="">
+                        <input type="text" id="ha" placeholder="Divisa Local"  pattern="[A-Z]{3}" required="">
+                        <button id="boton" class="btn btn-primary"> Convertir</button>
+                        <p id="resultado" class="convertidor"></p>
+                    </form>
                 </div>
             </div>
         </div>
